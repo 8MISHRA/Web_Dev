@@ -1,0 +1,21 @@
+
+{
+    "id": "user123",
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "password": "",
+    "phoneNumber": "",
+    "dateOfBirth": "",
+    "address": {
+        "city":"",
+        "state": "",
+        "pinCode":"",
+        "country":""
+    },
+  "paymentMethods": ["online", "offline", "cashOnDelivery", "creditCard", "debitCard", "paypal", "googlePay", "applePay", "amazonPay", "netBanking"],
+  "wishlist": ["product456", "product789"],
+  "accountStatus": "active",
+  "createdAt": "2023-01-01T00:00:00Z",
+  "lastLogin": "2023-05-20T10:15:30Z"
+}

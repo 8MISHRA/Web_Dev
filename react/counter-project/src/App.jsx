@@ -18,9 +18,17 @@ function App() {
   return (
     <>
       <button onClick={increment}>Add</button>
-      <DisplayComponent count =  {count}/>
+      <DisplayComponent count={count}/>
       {/* <h1>{count}</h1> */}
-      <button onClick={decrement}>Substract</button>
+
+      {/* {count > 5 && (
+        <button onClick={decrement}>Subtract</button>
+      )} */}
+      {(()=>{
+        if(count > 5){
+          return <button onClick={decrement}>Subtract</button>
+        }
+      })()}
     </>
   )
 }
