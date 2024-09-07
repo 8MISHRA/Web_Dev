@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import DisplayComponent from './component/DisplayComponent';
 import './App.css'
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
   return (
     <>
       <button onClick={increment}>Add</button>
-      <h1>{count}</h1>
+      <DisplayComponent count =  {count}/>
+      {/* <h1>{count}</h1> */}
       <button onClick={decrement}>Substract</button>
     </>
   )
