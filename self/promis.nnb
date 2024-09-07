@@ -1,0 +1,18 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                "let myprms = new Promise(function(resolve1, reject2){\n    \n})"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "myprms.then(function(message){\n\n}).catch"
+            ],
+            "outputs": []
+        }
+    ]
+}
