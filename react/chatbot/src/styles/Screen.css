@@ -1,0 +1,12 @@
+.screen {
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 20px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20vh;
+    width: 70%;
+  }
+  

@@ -1,12 +1,12 @@
 .button-container {
-    display: flex;
+    display: flex 0 0 calc(33.33% - 10px);
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 300px;
+    /* width: 300px; */
     margin: 0 auto;
   }
   
-  .button {
+.button {
     width: 70px;
     height: 70px;
     margin: 5px;
@@ -16,6 +16,22 @@
     background-color: #2b77da;
     cursor: pointer;
     transition: background-color 0.3s;
+
+    /* Added to limit buttons per row */
+    flex: 1 0 30%; 
+  }
+
+  .button:hover {
+    background-color: #e0e0e0;
+  }
+
+  .button.equals {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .button.equals:hover {
+    background-color: #45a049;
   }
   
   .button:hover {

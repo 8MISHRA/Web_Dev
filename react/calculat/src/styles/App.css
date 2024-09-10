@@ -21,3 +21,13 @@ body{
     font-size: 30px;
     font-weight: bold;
 }
+
+.screen {
+background-color: #8e0303;
+text-align: right;
+padding: 10px;
+font-size: 2rem;
+border: 1px solid #cd2020;
+margin-bottom: 10px;
+width: 100px;
+}
