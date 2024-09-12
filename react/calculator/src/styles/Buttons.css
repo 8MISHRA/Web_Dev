@@ -16,14 +16,9 @@
     background-color: #2b77da;
     cursor: pointer;
     transition: background-color 0.3s;
-
-    /* Added to limit buttons per row */
     flex: 1 0 30%; 
   }
 
-  .button:hover {
-    background-color: #e0e0e0;
-  }
 
   .button.equals {
     background-color: #4CAF50;
@@ -35,7 +30,7 @@
   }
   
   .button:hover {
-    background-color: #e0e0e0;
+    background-color: #3d6421;
   }
   
   .button.equals {

@@ -1,37 +1,41 @@
-import { useState } from 'react'
-// import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import SimpleCalculator from 'Calculator';
-import BackgroundColorChanger from 'backgroundColor';
-import TemperatureConverter from 'TemperatureConverter';
-// import './App.css'
+import React from 'react'
+import Screen from './Screen'
+import Buttons from './Buttons'
 
-
-function Home() {
-    return (
-      <Router>
-        <div className="navbar">
-          <Link to="/">Home</Link>
-          <Link to="/calculator">Calculator</Link>
-          <Link to="/background">Background Color Changer</Link>
-          <Link to="/temperature">Temperature Converter</Link>
-        </div>
+function mainPage() {
+    const [calculation, setCalculation] = useState('')
+    const [result, setResult] = useState('')
   
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/calculator" element={<SimpleCalculator />} />
-          <Route path="/background" element={<BackgroundColorChanger />} />
-          <Route path="/temperature" element={<TemperatureConverter />} />
-        </Routes>
-      </Router>
-    );
-  }
+    const handleButtonClick = (value) => {
+      if (value === '=') {
+        try {
+          const newResult = eval(calculation).toString()
+          setResult(newResult)
+          setCalculation(newResult)
+        } catch (error) {
+          setResult('Error')
+          setCalculation('Error')
+        }
+      } else if (value === 'C') {
+        setCalculation('')
+        setResult('')
+      } else {
+        setCalculation(prev => prev + value)
+      }
+    }
   
-  function HomePage() {
     return (
+      <>
       <div>
-        <h1>Welcome to the Home Page</h1>
-      </div>
-    );
-  }
-  
-  export default Home;
+          <div className="screen-component">
+            <Screen value={calculation} />
+          </div>
+          <div className='buttons'>
+            <Buttons onButtonClick={handleButtonClick} />
+          </div>
+        </div>
+      </>
+        )
+}
+
+export default mainPage
