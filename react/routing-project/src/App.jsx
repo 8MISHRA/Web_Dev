@@ -3,19 +3,20 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import About from './components/About';
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
     <Router>
-      {/* <Home /> */}
       <div>
-        <nav>
+        <Navbar/>
+        {/* <nav>
           <div style={{ display: 'flex', gap: '20px' }}>
             <Link to="/">Home</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/about">About</Link>
           </div>
-        </nav>
+        </nav> */}
 
         <Routes>
           <Route path="/" element={<Home />} />
