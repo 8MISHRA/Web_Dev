@@ -1,8 +1,7 @@
 .project-stack-container {
     padding: 20px;
-    /* overflow-y: scroll; */
-    max-height: 80vh;   /* Keeps the project stack within the viewport */
-    scrollbar-width: none; /* For Firefox: hide scrollbar */
+    scrollbar-width: none;
+    height: 1500px;
   }
 
 .project-row {
@@ -10,11 +9,15 @@ margin-bottom: 30px;
 }
 
 .project-col.align-left {
+    padding-top: 15px;
 margin-right: auto;
 margin-left: 0;
+
 }
 
 .project-col.align-right {
+padding-top: 70px;
+padding-left: 20px;
 margin-left: auto;
 margin-right: 0;
 }
@@ -33,6 +36,10 @@ transform: scale(1.05);
 display: flex;
 flex-direction: column;
 align-items: center;
-overflow-y: scroll;
-max-height: 80vh;
+/* overflow-y: scroll; */
+max-height: 130vh;
+}
+
+.project-heading{
+    color: white;
 }

@@ -1,8 +1,5 @@
 .slider_component{
-    /* justify-content: center;
-    align-items: center; */
     display: 'block'; 
     width: 700;
     padding: 30;
-    /* background-color: white; */
 }
