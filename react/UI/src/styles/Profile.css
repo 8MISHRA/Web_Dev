@@ -1,0 +1,45 @@
+.contact-btn {
+    background-color: #fff;
+    border-radius:10px ;
+    padding: 10px 20px;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+
+
+.hero {
+    display: flex;
+    padding: 40px;
+    background-color: white;
+    color: white;
+  
+  }
+  
+  .hero-left {
+    flex: 1;
+    background-color: antiquewhite;
+    
+  }
+  
+  .hero-left h1 {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .hero-right {
+    flex: 1;
+    text-align: center;
+    color: black;
+    background-color:white
+  }
+  
+  .profile-img {
+    width: 200px;
+    margin-left:100px ;
+  }
+  
+  .intro-text {
+    margin-top: 20px;
+  }
+  
