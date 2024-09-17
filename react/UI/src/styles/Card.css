@@ -1,0 +1,38 @@
+.project-stack-container {
+    padding: 20px;
+    /* overflow-y: scroll; */
+    max-height: 80vh;   /* Keeps the project stack within the viewport */
+    scrollbar-width: none; /* For Firefox: hide scrollbar */
+  }
+
+.project-row {
+margin-bottom: 30px;
+}
+
+.project-col.align-left {
+margin-right: auto;
+margin-left: 0;
+}
+
+.project-col.align-right {
+margin-left: auto;
+margin-right: 0;
+}
+
+.project-card {
+width: 100%;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s;
+}
+
+.project-card:hover {
+transform: scale(1.05);
+}
+
+.project-stack-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow-y: scroll;
+max-height: 80vh;
+}

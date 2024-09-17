@@ -6,7 +6,9 @@ function Header(){
     <>
         <div>
             <h1 className='HeaderContainer'>
-                CREATIVE UI/UX DESIGNER & WEB DEVELOPER
+                CREATIVE UI/UX <br/>
+                DESIGNER & WEB <br/>
+                DEVELOPER
             </h1>
         </div>
       </>

@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "title": "Data Science Job Portal",
+      "description": "A portal designed for freshers looking for jobs in data science.",
+      "link": "#"
+    },
+    {
+      "title": "Simple Calculator",
+      "description": "A calculator app built with React.",
+      "link": "#"
+    },
+    {
+      "title": "AI Webinars Club",
+      "description": "A club for students to learn AI-based APIs and projects.",
+      "link": "#"
+    }
+  ]
+}

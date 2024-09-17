@@ -1,3 +1,7 @@
+.profile_div {
+  font-family: 'Times New Roman', Georgia, serif;
+}
+
 .contact-btn {
     background-color: #fff;
     border-radius:10px ;
@@ -7,39 +11,49 @@
     cursor: pointer;
   }
 
-
-.hero {
+.content_body {
     display: flex;
     padding: 40px;
     background-color: white;
     color: white;
+    min-height: 500px;
   
   }
   
-  .hero-left {
-    flex: 1;
-    background-color: antiquewhite;
-    
-  }
+.content_body-left {
+  flex: 1;
+  background-color: antiquewhite;
+  min-height: 500px;
+}
+
+.content_body-left h1 {
+  font-size: 48px;
+  font-family: 'Playfair Display', serif;
+}
+
+.content_body-right {
+  flex: 1;
+  text-align: center;
+  color: black;
+  background-color:white;
+  justify-content: center; 
+  align-items: center;
+  margin-left: 30px;
+
+}
+
+.profile-img {
+  width: 200px;
+  min-height: 500px;
+  min-width: 412px;
+}
+
+.intro-text {
+  align-items: center;
+  margin-top: 20px;
   
-  .hero-left h1 {
-    font-size: 48px;
-    font-family: 'Playfair Display', serif;
-  }
-  
-  .hero-right {
-    flex: 1;
-    text-align: center;
-    color: black;
-    background-color:white
-  }
-  
-  .profile-img {
-    width: 200px;
-    margin-left:100px ;
-  }
-  
-  .intro-text {
-    margin-top: 20px;
-  }
-  
+}
+
+.paragraph { 
+  font-size: 25px;
+}

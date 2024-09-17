@@ -1,31 +1,46 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button';
+{/* <Image src={`profilephoto.jpg`} roundedCircle /> */}
+import React from 'react';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
-import ProfileImage from '../../public/profilephoto.jpg'
+import Button from 'react-bootstrap/Button';
 import "../styles/Profile.css"
 
-function Profile() {
-  return (
-    <div>
-        <section className="hero">
-            <div className="hero-left">
-                <img src={ProfileImage} alt="Profile" className="profile-img" />
-            </div>
-            <div className="hero-right">
-                <div className="intro-text">
-                    <h2>Hello!</h2>
-                <p>
-                    I’m an India-based web designer and developer working closely with early-stage startup founders to create beautiful and loveable websites for their business.
-                </p>
-                <Button className="rounded-pill bg-black">
-                    <Nav.Link href="#Contact" className="text-white">Contact</Nav.Link>
-                </Button>
-                {/* <button className="contact-btn">CONTACT</button> */}
-                </div>
-            </div>
-        </section>
-    </div>
-  )
-}
+const Profile = () => {
+  const LeftComponent = () => {
+    return (
+      <div className="d-flex justify-content-center align-items-center">
+        <Image src={`profilephoto.jpg`} roundedCircle/>
+      </div>
+    );
+  };
 
-export default Profile
+  const RightComponent = () => {
+    return (
+      <div>
+        <h3>My Profile</h3>
+        <p>
+          Hi, I am Divyansh. I am passionate about AI, React development, and building software solutions.
+          Currently, I'm working on creating web portals and AI-powered solutions for various use cases.
+        </p>
+        <Button className="rounded-pill bg-black">
+            <Nav.Link href="https://www.linkedin.com/in/divyansh-mishra-114955253/" className="text-white" target="_blank" rel="noopener noreferrer">Contact</Nav.Link>
+        </Button>
+      </div>
+    );
+  };
+
+  return (
+    <div className="my-5">
+      <Row>
+        <Col md={6}>
+          <LeftComponent />
+        </Col>
+        <Col md={6} className="md-10 d-flex align-items-center justify-content-center profile_div">
+          <RightComponent />
+        </Col>
+      </Row>
+    </div>
+  );
+};
+
+export default Profile;
