@@ -1,19 +1,22 @@
-{
-  "projects": [
-    {
-      "title": "Data Science Job Portal",
-      "description": "A portal designed for freshers looking for jobs in data science.",
-      "link": "#"
-    },
-    {
-      "title": "Simple Calculator",
-      "description": "A calculator app built with React.",
-      "link": "#"
-    },
-    {
-      "title": "AI Webinars Club",
-      "description": "A club for students to learn AI-based APIs and projects.",
-      "link": "#"
-    }
-  ]
-}
+[
+  {
+    "title": "Project 1",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus Description of project 1",
+    "imgSrc": "project.jpeg"
+  },
+  {
+    "title": "Project 2",
+    "description": "Description of project 2",
+    "imgSrc": "project.jpeg"
+  },
+  {
+    "title": "Project 3",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus Description of project 3",
+    "imgSrc": "project.jpeg"
+  },
+  {
+    "title": "Project 4",
+    "description": "Description of project 4",
+    "imgSrc": "project.jpeg"
+  }
+]

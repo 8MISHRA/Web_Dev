@@ -9,7 +9,7 @@ const Profile = () => {
   const LeftComponent = () => {
     return (
       <div className="d-flex justify-content-center align-items-center">
-        <Image src={`profilephoto.jpg`} roundedCircle/>
+        <Image src={`profilephoto.jpg`} roundedCircle fluid/>
       </div>
     );
   };
@@ -22,9 +22,11 @@ const Profile = () => {
           Hi, I am Divyansh. I am passionate about AI, React development, and building software solutions.
           Currently, I'm working on creating web portals and AI-powered solutions for various use cases.
         </p>
-        <Button className="rounded-pill bg-black">
-            <Nav.Link href="https://www.linkedin.com/in/divyansh-mishra-114955253/" className="text-white" target="_blank" rel="noopener noreferrer">Contact</Nav.Link>
-        </Button>
+          <div className="d-flex justify-content-center">
+            <Button className="rounded-pill bg-black" style={{ width: '150px' }}>
+              <Nav.Link href="https://www.linkedin.com/in/divyansh-mishra-114955253/" className="text-white" target="_blank" rel="noopener noreferrer">Contact</Nav.Link>
+            </Button>
+          </div>
       </div>
     );
   };

@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import '../styles/Card.css';
+import '../styles/ProjectStack.css';
 
 function ProjectStack() {
   const projects = [
@@ -15,7 +15,7 @@ function ProjectStack() {
 
   return (
     <div className="project-stack-container bg-black">
-      <h1 className='project-heading'>Selected Projects</h1>
+      <h1 className='project-heading'>My Projects</h1>
       {Array.from({ length: Math.ceil(projects.length / 2) }).map((_, rowIdx) => (
         <Row key={rowIdx} className={`project-row ${rowIdx % 2 === 0 ? 'left' : 'right'}`}>
           {projects.slice(rowIdx * 2, rowIdx * 2 + 2).map((project, colIdx) => (

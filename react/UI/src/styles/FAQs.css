@@ -1,0 +1,42 @@
+
+.faq-container {
+    background-color: #000;
+    color: #fff;
+    display: block;
+    padding: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  
+  .faq-item {
+    width: 100%;
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  
+  .faq-item h2 {
+    font-size: 1.5em;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faq-item p {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+  
+  .faq-item.active p {
+    display: block;
+  }
+  
+  .faq-item i {
+    font-size: 1.5em;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin: 10px 0;
+  }

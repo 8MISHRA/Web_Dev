@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import NavbarComponent from './components/NavbarComponent'
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
 import Profile from './components/Profile'
-import Projects from './components/Projects'
+// import Projects from './components/Projects'
 import CarouselComponent from './components/Sliders'
 import FAQs from './components/Faqs'
-import GridExample from './components/Card'
+import Projects from './components/ProjectStack'
+import Footer from './components/Footer'
+import Contact from './components/Contact'
 import './App.css'
 
 
@@ -13,15 +16,25 @@ function App() {
 
   return (
     <>
-      <NavbarComponent />
+      <NavbarComponent buttonText="Contact" link="https://github.com/8mishra" />
       <Header />
       <Profile />
-      {/* <Projects /> */}
-      <GridExample />
+      <Projects />
+      <Contact />
       <CarouselComponent />
       <FAQs />
+      <Footer />
+      
+
+
+      {/* <Router>
+        <Routes>
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router> */}
     </>
   )
 }
 
 export default App
+

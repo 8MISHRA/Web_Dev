@@ -1,5 +1,23 @@
+.carousels{
+    background-color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
 .slider_component{
     display: 'block'; 
     width: 700;
     padding: 30;
+}
+.sliders{
+    height: 40vh;
+    background-color: rgb(0, 0, 0);
+    /* color: rgb(255, 255, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+}
+
+.carousel-caption{
+    color: rgb(255, 255, 255);
 }

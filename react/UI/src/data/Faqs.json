@@ -1,0 +1,22 @@
+[
+    {
+        "question": "How long does it take to build a website?",
+        "answer": "Typically, it takes 1 to 4 weeks depending on complexity and requirements."
+    },
+    {
+        "question": "How much does a project cost?",
+        "answer": "Project costs vary, ranging from Rs. 50k to Rs. 100k depending on features and scope."
+    },
+    {
+        "question": "What services do you offer exactly?",
+        "answer": "We offer web design, development, SEO, e-commerce, CMS, and custom web solutions."
+    },
+    {
+        "question": "What if I have the website designed but need development only?",
+        "answer": "We can handle development from your design, focusing on clean code and functionality."
+    },
+    {
+        "question": "Can you create custom illustrations, icons or mockups for me?",
+        "answer": "Yes, we provide custom illustrations, icons, and mockups tailored to your project."
+    }
+]
