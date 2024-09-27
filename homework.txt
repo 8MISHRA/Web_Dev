@@ -1,1 +1,0 @@
-if-else, &&, ?: are different or same? What are the differences? and when to use which?
