@@ -1,0 +1,103 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px; /* Increased padding for a more spacious layout */
+    border-radius: 10px; /* Rounded corners for the container */
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 30px; /* Added margin for spacing */
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #333; /* Darker color for better readability */
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif; /* Changed font for modern look */
+}
+
+.text-above-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.text-above-cards div {
+    width: 30%;
+    text-align: left;
+}
+
+.text-above-cards p {
+    font-size: 16px; /* Unified font size for readability */
+    line-height: 1.5; /* Improved line height */
+    color: #555; /* Softer color for text */
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Added gap between cards */
+}
+
+.card {
+    width: 30%;
+    background-color: #fff; /* Changed to white for card contrast */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    transition: transform 0.3s; /* Added hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px; /* Slightly smaller radius for images */
+}
+
+.card .badge {
+    position: absolute;
+    background-color: #007bff; /* Changed to a blue badge */
+    color: #fff; /* White text for contrast */
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    top: 20px;
+    left: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #333; /* Darker color for titles */
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666; /* Softer color for descriptions */
+}
+
+.more-destinations {
+    text-align: center;
+    margin-top: 40px; /* Increased margin for emphasis */
+}
+
+.more-destinations button {
+    background-color: #28a745; /* Changed to a green shade */
+    color: #fff; /* White text for better contrast */
+    border: none;
+    padding: 12px 25px; /* Increased padding for a more substantial button */
+    border-radius: 20px;
+    font-size: 18px; /* Larger font size for the button */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth color change on hover */
+}
+
+.more-destinations button:hover {
+    background-color: #218838; /* Darker green on hover */
+}

@@ -1,0 +1,90 @@
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+.plans-table {
+    width: 100%;
+    border-collapse: separate; /* Important for border-radius */
+    border-spacing: 0; /* Remove spacing between cells */
+    border-radius: 10px; /* Adjust this value for more or less rounding */
+    overflow: hidden; /* Ensures rounded corners are applied */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for depth */
+}
+.plans-table th, .plans-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+.plans-table th {
+    background-color: #333;
+    font-size: 1.2em;
+}
+.plans-table td {
+    background-color: #2a2a2a;
+    font-size: 1em;
+}
+.plans-table .plan-header {
+    text-align: center;
+}
+.plans-table .plan-header div {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0 5px;
+    font-size: 1em;
+}
+.plans-table .plan-header .basic {
+    background-color: #7ed957;
+    color: black;
+}
+.plans-table .plan-header .advanced {
+    background-color: #a97efb;
+    color: black;
+}
+.plans-table .plan-header .premium {
+    background-color: #fbbd3e;
+    color: black;
+}
+.plans-table .price {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.download-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.download-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.download-section p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+.download-section img {
+    width: 150px;
+    margin: 10px;
+}
+.phone-image {
+    text-align: center;
+    margin-top: -100px;
+}
+.phone-image img {
+    width: 250px;
+    border-radius: 20px;
+}
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+}

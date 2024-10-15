@@ -1,0 +1,106 @@
+/* Register.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bbd6ec; /* Light blue background */
+  }
+  
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 33%; /* Centering the registration box */
+  }
+  
+  .register-box {
+    background-color: #ffffff; /* White background for the box */
+    padding: 40px;
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .register-box h1 {
+    margin-bottom: 20px;
+    font-size: 26px; /* Slightly larger font size */
+    color: #333; /* Dark color for text */
+    text-align: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #d1d1d1; /* Light gray border */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Smooth transition for border */
+    background-color: #979ca1; /* Input background color */
+    color: black;
+  }
+  
+  .input-field:focus {
+    border-color: #979ca1; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  .register-button {
+    margin-top: 10px;
+    background-color: #5cb85c; /* Soft green for register */
+    color: #ffffff;
+  }
+  
+  .register-button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .login-button {
+    margin-top: 10px;
+    background-color: #007bff; /* Bright blue for login */
+    color: #ffffff;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .error-message {
+    color: #ff4d4d; /* Soft red for error messages */
+    margin-bottom: 15px;
+    text-align: center; /* Centered error message */
+  }
+  
+  /* Additional styles for responsiveness */
+  @media (max-width: 480px) {
+    .register-box {
+      padding: 20px; /* Reduced padding on small screens */
+    }
+  
+    .register-box h1 {
+      font-size: 22px; /* Slightly smaller font size */
+    }
+  
+    .button {
+      font-size: 14px; /* Slightly smaller button text */
+    }
+  }
+  

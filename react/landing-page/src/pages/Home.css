@@ -1,0 +1,104 @@
+/* Home.css */
+
+/* Ensure full page layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height */
+    min-width: 100vw;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0073e6;
+    color: white;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+  }
+  
+  .nav-links span {
+    margin-right: 10px;
+  }
+  .nav-links .logout-button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #e68900;
+  }
+  
+  .main-content {
+    flex-grow: 1; /* Makes content take available space */
+  }
+  
+  .hero-section {
+    background-color: #0073e6;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .cta-button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .cta-button:hover {
+    background-color: #e68900;
+  }
+  
+  .features-section {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+  }
+  
+  .about-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-section {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+  

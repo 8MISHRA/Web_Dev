@@ -1,0 +1,177 @@
+/* src/components/Login.css */
+
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f0f2f5; /* Changed to a subtle light gray for better contrast */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-page {
+    display: flex;
+    width: 90%;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel-container {
+    flex: 1;
+    position: relative;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .auth-container {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .auth-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333333;
+  }
+  
+  .error {
+    background-color: #ffe6e6;
+    color: #cc0000;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #cc0000;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    color: #555555;
+    font-size: 14px;
+  }
+  
+  input {
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+    outline: none;
+  }
+  
+  button {
+    padding: 14px;
+    background-color: #0066cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #004999;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 20px;
+    color: #666666;
+    font-size: 14px;
+  }
+  
+  p a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  p a:hover {
+    color: #004999;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-page {
+      flex-direction: column;
+      max-width: 600px;
+    }
+  
+    .carousel-container {
+      height: 200px;
+    }
+  
+    .auth-container {
+      padding: 30px 20px;
+    }
+  
+    .auth-container h2 {
+      font-size: 24px;
+    }
+  
+    input, button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .carousel-container {
+      height: 150px;
+    }
+  
+    .auth-container {
+      padding: 20px 15px;
+    }
+  
+    .auth-container h2 {
+      font-size: 20px;
+    }
+  
+    input, button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
