@@ -18,7 +18,6 @@ const App = () => {
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-          {/* Add more routes as needed */}
         </Routes>
       </div>
     </Router>

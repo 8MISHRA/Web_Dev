@@ -1,20 +1,25 @@
 import React from 'react';
-import './App.css'; // Main CSS file
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import SecondPage from './components/SecondPage';
-import ThirdPage from './components/ThirdPage';
-import Footer from './components/Footer';
+import './App.css';
+// import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import Landing from './pages/landingPage';
+import Signup from './pages/Signup';
+import IdeaTracker from './components/ideaTracker';
+
 function App() {
   return (
     <div>
-      <Navbar />
-      <HeroSection />
-      <SecondPage />
-      <ThirdPage />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Landing/>} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/idea" element={<IdeaTracker />} />
+        </Routes>
+    </Router>
     </div>
   );
 }
-
+ 
 export default App;

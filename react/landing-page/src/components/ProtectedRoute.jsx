@@ -1,3 +1,4 @@
+// src/components/ProtectedRoute.jsx
 import React, { useEffect, useState } from 'react';
 import { account } from '../lib/appwrite';
 import { Navigate } from 'react-router-dom';
@@ -26,4 +27,3 @@ const ProtectedRoute = ({ children }) => {
 };
 
 export default ProtectedRoute;
-

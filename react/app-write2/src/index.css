@@ -15,7 +15,7 @@ body, html {
 /* Gradient Background */
 body {
   /* Linear gradient from top-left to bottom-right */
-  background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+  background: linear-gradient(135deg, #4c4c4d 0%, #000000 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +85,7 @@ body {
 .auth-container button {
   width: 100%;
   padding: 0.75rem;
-  background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+  background: linear-gradient(135deg, #fbfbfc 0%, #191919 100%);
   border: none;
   border-radius: 8px;
   color: #fff;
@@ -96,7 +96,7 @@ body {
 }
 
 .auth-container button:hover {
-  background: linear-gradient(135deg, #000DFF 0%, #6B73FF 100%);
+  background: linear-gradient(135deg, #fbfbfc 0%, #191919 100%);
   transform: translateY(-2px);
 }
 

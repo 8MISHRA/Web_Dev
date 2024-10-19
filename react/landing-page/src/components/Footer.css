@@ -14,11 +14,11 @@
 }
 .plans-table {
     width: 100%;
-    border-collapse: separate; /* Important for border-radius */
-    border-spacing: 0; /* Remove spacing between cells */
-    border-radius: 10px; /* Adjust this value for more or less rounding */
-    overflow: hidden; /* Ensures rounded corners are applied */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for depth */
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .plans-table th, .plans-table td {
     padding: 15px;

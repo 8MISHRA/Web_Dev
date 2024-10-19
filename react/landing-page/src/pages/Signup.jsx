@@ -1,13 +1,15 @@
+// src/pages/Signup.jsx
 import React, { useState } from 'react';
 import { account } from '../lib/appwrite';
 import { useNavigate, Link } from 'react-router-dom';
-import "./Login.css";
 
-const Login = () => {
+
+const Signup = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({
     email: '',
-    password: ''
+    password: '',
+    name: ''
   });
   const [error, setError] = useState('');
 
@@ -18,9 +20,9 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await account.createSession(form.email, form.password);
+      const response = await account.create('unique()', form.email, form.password, form.name);
       console.log(response);
-      navigate('/dashboard');
+      navigate('/login');
     } catch (err) {
       setError(err.message);
     }
@@ -28,9 +30,13 @@ const Login = () => {
 
   return (
     <div className="auth-container">
-      <h2>Login</h2>
+      <h2>Sign Up</h2>
       {error && <p className="error">{error}</p>}
       <form onSubmit={handleSubmit}>
+        <div>
+          <label>Name:</label>
+          <input type="text" name="name" value={form.name} onChange={handleChange} required />
+        </div>
         <div>
           <label>Email:</label>
           <input type="email" name="email" value={form.email} onChange={handleChange} required />
@@ -39,14 +45,13 @@ const Login = () => {
           <label>Password:</label>
           <input type="password" name="password" value={form.password} onChange={handleChange} required />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit">Sign Up</button>
       </form>
       <p>
-        Don't have an account? <Link to="/signup">Sign up here</Link>.
+        Already have an account? <Link to="/login">Login here</Link>.
       </p>
     </div>
   );
 };
 
-export default Login;
-
+export default Signup;

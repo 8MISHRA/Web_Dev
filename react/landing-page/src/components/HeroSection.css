@@ -1,12 +1,12 @@
 .hero-section {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
     padding: 25px 40px;
     background-color: #282929;
     color: #fff;
     border-radius: 20px;
-    margin: 20px;
+    margin: 80px;    
     width: 1400px;
 }
 

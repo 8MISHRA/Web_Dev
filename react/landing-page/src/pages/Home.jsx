@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from "../lib/context/user";
-import './Home.css'; // Styling for the home page
+import './Home.css';
 
 export function Home() {
   const user = useUser();
@@ -9,13 +9,12 @@ export function Home() {
 
   const handleLogout = () => {
     user.logout();
-    navigate("/"); // Redirect to login page after logout
+    navigate("/"); 
   };
 
   if (!user.current) {
-    // If the user is not logged in, redirect to the login page
     navigate("/");
-    return null; // Prevent rendering until redirect
+    return null;
   }
 
   return (
@@ -38,3 +37,5 @@ export function Home() {
     </div>
   );
 }
+
+

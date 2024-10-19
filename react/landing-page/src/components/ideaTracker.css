@@ -1,0 +1,148 @@
+/* src/components/IdeaTracker.css */
+
+/* Container Styling */
+.idea-tracker-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    max-width: 600px;
+    margin: 2rem auto;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Heading */
+  .idea-tracker-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  /* Form Styling */
+  .idea-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #6B73FF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(107, 115, 255, 0.5);
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #fbfbfc 0%, #191919 100%);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(135deg, #fbfbfc 0%, #191919 100%);
+    transform: translateY(-2px);
+  }
+  
+  .submit-button:active {
+    transform: translateY(0);
+  }
+  
+  /* Error Message */
+  .error-message {
+    background: #ffe0e0;
+    color: #d8000c;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: 1px solid #d8000c;
+  }
+  
+  /* Ideas List */
+  .ideas-list {
+    margin-top: 2rem;
+  }
+  
+  .ideas-list h3 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .ideas-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .idea-item {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .idea-item h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .idea-item p {
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .idea-tracker-container {
+      padding: 2rem 1.5rem;
+    }
+  
+    .idea-tracker-container h2 {
+      font-size: 1.75rem;
+    }
+  
+    .submit-button {
+      font-size: 1rem;
+    }
+  }
+  
