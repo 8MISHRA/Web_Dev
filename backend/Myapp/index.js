@@ -1,16 +1,44 @@
-// node.js provides a runtime environment for executing javascript code outside of a web browser.
-// node.js is a javascript runtime environment that allows you to run javascript code outside of a web browser.
+const fs = require('fs');
+const express = require('express');
+const app = express();
+const port = 3000;
 
 
+app.get('/', (req, res) => {
+    fs.readFile('MOCK_DATA.json', 'utf-8', (err, data) => {            
+        const users = JSON.parse(data);
+        let userList = '<ul>';
+        users.forEach(user => {
+            userList += `<li>${user.first_name} ${user.last_name} --<br> ${"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"}-- ${user.email}</li><br>`;
+        });
+        userList += '</ul>';
+        res.send(userList);
+    });
+});
 
-// const add = (a, b)=>a+b;
-// console.log(add(1,2));
 
-// const add = require(" ./math.js")
+app.get('/test', (req, res) => {
+    res.send('This is the test page');
+});
 
-// console.log("Hello World")
 
-// module.exports = add;
+app.get('/user/:id', (req, res) => {
+    console.log(req.params.id);
+    const id = req.params.id;
+    res.send(`Hello ${id}!`);
+});
 
-const math = require("./math.js")
-console.log(math.sub(2,3))
+app.get('/api/', (req, res) => {
+    fs.readFile('MOCK_DATA.json', 'utf-8', (err, data) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(JSON.parse(data));
+        }
+    });
+});
+
+app.listen(port, () => {
+    console.log("Server is running on port 3000");
+});
+

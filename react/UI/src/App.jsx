@@ -27,11 +27,7 @@ function App() {
       
 
 
-      {/* <Router>
-        <Routes>
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Router> */}
+      
     </>
   )
 }
