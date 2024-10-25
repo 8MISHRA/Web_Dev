@@ -1,41 +1,68 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
 import { useUser } from "../lib/context/user";
-import './Home.css';
+import { useIdeas } from "../lib/context/ideas";
 
 export function Home() {
   const user = useUser();
-  const navigate = useNavigate();
+  const ideas = useIdeas();
 
-  const handleLogout = () => {
-    user.logout();
-    navigate("/"); 
-  };
-
-  if (!user.current) {
-    navigate("/");
-    return null;
-  }
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
 
   return (
-    <div className="home-container">
-      {/* Navigation Bar */}
-      <header className="navbar">
-        <div className="logo">
-          <h2>Idea Tracker</h2>
-        </div>
-        <nav className="nav-links">
-          <span>{user.current.email}</span>
-          <button className="logout-button" onClick={handleLogout}>Logout</button>
-        </nav>
-      </header>
-
-      {/* Footer */}
-      <footer className="footer-section">
-        <p>© 2024 Coding Contest Platform. All rights reserved.</p>
-      </footer>
-    </div>
+    <>
+      {/* Show the submit form to logged in users. */}
+      {user.current ? (
+        <section>
+          <h2>Submit Idea</h2>
+          <form>
+            <input
+              type="text"
+              placeholder="Title"
+              value={title}
+              onChange={(event) => {
+                setTitle(event.target.value);
+              }}
+            />
+            <textarea
+              placeholder="Description"
+              value={description}
+              onChange={(event) => {
+                setDescription(event.target.value);
+              }}
+            />
+            <button
+              type="button"
+              onClick={() =>
+                ideas.add({ userId: user.current.$id, title, description })
+              }
+            >
+              Submit
+            </button>
+          </form>
+        </section>
+      ) : (
+        <section>
+          <p>Please login to submit an idea.</p>
+        </section>
+      )}
+      <section>
+        <h2>Latest Ideas</h2>
+        <ul>
+          {ideas.current.map((idea) => (
+            <li key={idea.$id}>
+              <strong>{idea.title}</strong>
+              <p>{idea.description}</p>
+              {/* Show the remove button to idea owner. */}
+              {user.current && user.current.$id === idea.userId && (
+                <button type="button" onClick={() => ideas.remove(idea.$id)}>
+                  Remove
+                </button>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+    </>
   );
 }
-
-

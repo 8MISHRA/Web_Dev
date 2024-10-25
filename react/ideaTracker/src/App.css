@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1b1b2f; /* Deep royal blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #ffffff; /* White text for readability */
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4e5d73; /* Muted royal blue for navbar */
+  padding: 15px 20px;
+  color: #f8e9a1; /* Soft gold for navbar text */
+}
+
+nav a {
+  color: #f8e9a1; /* Soft gold for links */
+  text-decoration: none;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700; /* Brighter gold on hover */
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav button {
+  padding: 10px 15px;
+  background-color: #45afe8; /* Rich red for logout button */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: rgba(255, 215, 0, 0.1); /* Subtle gold on hover */
+}
+
+/* Login Page Styles */
+section {
+  background-color: #4e5d73; /* Dark royal purple background */
+  padding: 30px;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #f8e9a1; /* Soft gold for headers */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #1b1b2f; /* Deep blue background for inputs */
+  color: #ffffff;
+}
+
+form input:focus {
+  border-color: #f8e9a1; /* Soft gold border on focus */
+  outline: none;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+}
+
+button.button {
+  padding: 10px 20px;
+  background-color: #3a506b; /* Dark muted blue for buttons */
+  color: #f8e9a1; /* Soft gold text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button.button:hover {
+  background-color: #ffd700; /* Bright gold on hover */
+}
+
+button.button:first-child {
+  margin-right: 10px; /* Spacing between buttons */
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #8d99ae; /* Muted light gray for footer text */
+}

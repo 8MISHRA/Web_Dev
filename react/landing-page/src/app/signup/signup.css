@@ -1,0 +1,111 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Signup Page Styling */
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Signup Box */
+  .signup-box {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .signup-box:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Heading */
+  .signup-box h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3498db;
+  }
+  
+  /* Input Fields */
+  .input-container {
+    position: relative;
+    margin: 15px 0;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 15px 50px 15px 15px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-container input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .input-container i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #3498db;
+    font-size: 20px;
+  }
+  
+  /* Button */
+  .signup-box button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .signup-box button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  /* Extra Styling */
+  .signup-box button:focus {
+    outline: none;
+  }
+  
+  .signup-box p {
+    color: #555;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .signup-box p a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .signup-box p a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,389 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: serif;
+    /* font-family: ; */
+    background-color: #0f0f0f;
+    color: #ffffff;
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+    color: #ffffff;
+  }
+  
+  .header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .header .logo span {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(8, 240, 8);
+  }
+  
+  .header .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .header .nav-links a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  .header .nav-links a:hover {
+    color: rgb(8, 240, 8);
+  }
+  
+  .header .sign-in button {
+    background-color: rgb(8, 240, 8);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header .sign-in button:hover {
+    background-color: rgb(8, 240, 8);
+  }
+  
+  /* Main Section Styles */
+  .main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background: linear-gradient(180deg, #121212, #0f0f0f);
+  }
+  
+  .main-section .content {
+    max-width: 50%;
+  }
+  
+  .main-section h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .main-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #bfbfbf;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .get-app, .learn-more {
+    padding: 15px 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .get-app {
+    background-color: rgb(8, 240, 8);
+    color: #000;
+  }
+  
+  .learn-more {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+  }
+  
+  .get-app:hover {
+    background-color: rgb(8, 240, 8);
+  }
+  
+  .learn-more:hover {
+    border-color: rgb(8, 240, 8);
+    color: rgb(8, 240, 8);
+  }
+  
+  /* Ratings Section */
+  .ratings {
+    margin-top: 30px;
+    display: flex; /* Use flexbox to arrange children in a row */
+    gap: 10px; /* Optional: adds space between paragraphs */
+  }
+  
+  .ratings p {
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .h6{
+    font-size:18px;
+  }
+  
+  .mockup img {
+    max-width: 400px;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.6));
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #1a1a1a;
+    padding: 70px 50px;
+    text-align: center;
+  }
+  
+  .footer h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .footer p {
+    font-size: 18px;
+    color: #bfbfbf;
+    margin-bottom: 30px;
+  }
+  
+  .footer .discover-applications {
+    color: rgb(8, 240, 8);
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .discover-applications:hover {
+    color: rgb(8, 240, 8);
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .main-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 50px 20px;
+    }
+  
+    .main-section .content {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .mockup img {
+      width: 300px;
+    }
+  }
+  
+  
+  /* Footer Styles */
+.footer {
+    background-color: #1a1a1a;
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .footer h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .footer p {
+    font-size: 16px;
+    color: #bfbfbf;
+    margin-bottom: 25px;
+  }
+  
+  .footer .discover-applications {
+    color: rgb(8, 240, 8);
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .discover-applications:hover {
+    color: #ffffff;
+  }
+  
+  /* App Store Buttons */
+  .app-buttons {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .app-buttons a {
+    color: #ffffff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .app-buttons a:hover {
+    color: rgb(8, 240, 8);
+  }
+  
+  /* Social Media Links */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25px;
+  }
+  
+  .social-links a {
+    color: #ffffff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: rgb(8, 240, 8);
+  }
+  
+  /* Footer Menu Links */
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-menu a {
+    color: #bfbfbf;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-menu a:hover {
+    color: rgb(8, 240, 8);
+  }
+  
+  /* Copyright Section */
+  .copyright {
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+  }
+  
+  /* Icon Styles */
+  .icon {
+    font-size: 24px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: rgb(8, 240, 8);
+  }
+  
+  /* Mobile Styles for Footer */
+  @media (max-width: 768px) {
+    .footer .social-links {
+      flex-direction: column;
+    }
+  
+    .footer .footer-menu {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+
+  
+  .testimonial-container {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1em;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust the width as needed */
+  }
+  
+  .quote {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #333;
+  }
+  
+  .name {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .position {
+    font-size: 0.9em;
+    color: #666;
+  }
+  

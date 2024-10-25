@@ -1,52 +1,49 @@
-import React, { useState } from 'react';
-import { account } from '../lib/appwrite';
-import { useNavigate, Link } from 'react-router-dom';
-import "./Login.css";
+import { useState } from "react";
+import { useUser } from "../lib/context/user";
 
-const Login = () => {
-  const navigate = useNavigate();
-  const [form, setForm] = useState({
-    email: '',
-    password: ''
-  });
-  const [error, setError] = useState('');
+export function Login() {
+  const user = useUser();
 
-  const handleChange = (e) => {
-    setForm({...form, [e.target.name]: e.target.value});
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await account.createSession(form.email, form.password);
-      console.log(response);
-      navigate('/dashboard');
-    } catch (err) {
-      setError(err.message);
-    }
-  };
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
-    <div className="auth-container">
-      <h2>Login</h2>
-      {error && <p className="error">{error}</p>}
-      <form onSubmit={handleSubmit}>
+    <section>
+      <h1>Login or register</h1>
+      <form>
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(event) => {
+            setEmail(event.target.value);
+          }}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(event) => {
+            setPassword(event.target.value);
+          }}
+        />
         <div>
-          <label>Email:</label>
-          <input type="email" name="email" value={form.email} onChange={handleChange} required />
+          <button
+            className="button"
+            type="button"
+            onClick={() => user.login(email, password)}
+          >
+            Login
+          </button>
+          <button
+            className="button"
+            type="button"
+            onClick={() => user.register(email, password)}
+          >
+            Register
+          </button>
         </div>
-        <div>
-          <label>Password:</label>
-          <input type="password" name="password" value={form.password} onChange={handleChange} required />
-        </div>
-        <button type="submit">Login</button>
       </form>
-      <p>
-        Don't have an account? <Link to="/signup">Sign up here</Link>.
-      </p>
-    </div>
+    </section>
   );
-};
-
-export default Login;
-
+}
